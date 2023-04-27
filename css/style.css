@@ -167,3 +167,56 @@ html::-webkit-scrollbar-thumb {
     padding: 1rem 0;
     line-height: 1.2;
 }
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content span {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.about .row .content p {
+    font-size: 1.4rem;
+    color: var(--white);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .row .content ul li {
+    font-size: 1.7rem;
+    color: var(--white);
+    padding-top: 1.5rem;
+}
+
+.about .row .content ul li i {
+    color: var(--primary);
+    padding-right: 1rem;
+}
+
+.about .row .content .btn {
+    margin: 3rem 0;
+}
+
+.about .row .image {
+    flex: 1 1 30rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    height: 100%;
+}
