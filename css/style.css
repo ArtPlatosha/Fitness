@@ -45,3 +45,45 @@ html::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 5rem;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 9%;
+    background-color: #040608;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.header .logo i {
+    padding-right: .5rem;
+    color: var(--primary);
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    color: var(--white);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+}
+
+#menu {
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: none;
+}
