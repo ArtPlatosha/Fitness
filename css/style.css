@@ -87,3 +87,9 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
     display: none;
 }
+
+.home {
+    background: url(../images/home.jpg) no-repeat;
+    min-height: 110vh;
+    display: flex;
+}
