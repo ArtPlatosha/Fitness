@@ -60,6 +60,15 @@ html::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 
+.heading {
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 6rem;
+}
+
 .btn::before,
 .btn::after {
     content: '';
@@ -219,4 +228,54 @@ html::-webkit-scrollbar-thumb {
 .about .row .image img {
     width: 100%;
     height: 100%;
+}
+
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+
+.services .box-container .box {
+    height: 25rem;
+    flex: 1 1 30rem;
+    border: 1rem solid var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .box-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .box-container .box .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.services .box-container .box:hover .content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.services .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
 }
