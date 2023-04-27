@@ -279,3 +279,29 @@ html::-webkit-scrollbar-thumb {
     color: #666;
     padding: 1rem 0;
 }
+
+.counter {
+    background: url(../images/bg.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+.counter .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.counter .box-container .box {
+    text-align: center;
+}
+
+
+.counter .box-container .box h3 {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.counter .box-container p {
+    font-size: 2rem;
+    color: var(--white);
+}
