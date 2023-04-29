@@ -533,3 +533,70 @@ html::-webkit-scrollbar-thumb {
     text-align: center;
     color: var(--white);
 }
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu {
+        display: inline-block;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: #040608;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+
+    .home {
+        background-position: left;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .team .box-container .box .image {
+        height: 56rem;
+    }
+
+    .team .box-container .box .image img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .team .box-container .box .image {
+        height: 46rem;
+    }
+}
