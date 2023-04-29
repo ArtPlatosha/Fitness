@@ -305,3 +305,59 @@ html::-webkit-scrollbar-thumb {
     font-size: 2rem;
     color: var(--white);
 }
+
+.pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.pricing .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border: 0.1rem solid rgba(255, 255, 255, .2);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.pricing .box-container .box h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--primary);
+    padding-top: 1rem;
+}
+
+.pricing .box-container .box .price {
+    font-size: 6rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
+.pricing .box-container .box .price span {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.pricing .box-container .box .month {
+    font-size: 2rem;
+    color: #666;
+}
+
+.pricing .box-container .box .list {
+    padding: 1rem 0;
+}
+
+.pricing .box-container .box .list p {
+    font-size: 1.7rem;
+    color: #ccc;
+    line-height: 2;
+}
+
+.pricing .box-container .box .list p i {
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.pricing .box-container .box .list p i.fa-times {
+    color: var(--white);
+}
