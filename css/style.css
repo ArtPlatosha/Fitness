@@ -361,3 +361,60 @@ html::-webkit-scrollbar-thumb {
 .pricing .box-container .box .list p i.fa-times {
     color: var(--white);
 }
+
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.team .box-container .box {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.team .box-container .box .image {
+    height: 42rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.team .box-container .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .box-container .box .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.team .box-container .box .content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.team .box-container .box .content p {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.team .box-container .box .content .share i {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border: .1rem solid var(--primary);
+    color: var(--primary);
+    font-size: 2rem;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.team .box-container .box .content .share i:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
