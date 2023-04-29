@@ -124,7 +124,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .header .navbar a {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--white);
     margin: 0 1rem;
 }
