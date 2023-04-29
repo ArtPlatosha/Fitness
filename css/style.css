@@ -418,3 +418,44 @@ html::-webkit-scrollbar-thumb {
     color: var(--white);
     background-color: var(--primary);
 }
+
+.register {
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.register form {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.register form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register form .inputBox input,
+.register form textarea {
+    height: 4rem;
+    width: 49%;
+    background-color: #222;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    border: none;
+}
+
+.register form .inputBox input:focus,
+.register form textarea:focus {
+    background-color: #383838;
+}
+
+.register form textarea {
+    height: 20rem;
+    padding: 1rem;
+    width: 100%;
+    resize: none;
+}
